@@ -1,0 +1,42 @@
+# Gradle
+.gradle/
+build/
+out/
+
+# IntelliJ / Rider
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Plugin sandbox and generated artifacts
+sandbox/
+buildSearchableOptions/
+
+# Kotlin / Java
+*.class
+*.jar
+!gradle/wrapper/gradle-wrapper.jar
+*.war
+*.ear
+hs_err_pid*
+
+# Logs
+*.log
+logs/
+
+# OS and editor noise
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+
+# Local workspace scratch/output folders
+work/
+outputs/
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.swp

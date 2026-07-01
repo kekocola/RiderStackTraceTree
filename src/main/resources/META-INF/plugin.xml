@@ -1,0 +1,14 @@
+<idea-plugin>
+    <id>com.example.rider.stacktrace.tree</id>
+    <name>C# Stack Trace Tree</name>
+    <vendor>Local Tools</vendor>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <toolWindow
+            id="Stack Trace Tree"
+            anchor="bottom"
+            factoryClass="com.example.rider.stacktrace.tree.ui.StackTraceToolWindowFactory"/>
+    </extensions>
+</idea-plugin>
