@@ -10,6 +10,7 @@ out/
 *.iws
 
 # Plugin sandbox and generated artifacts
+.intellijPlatform/
 sandbox/
 buildSearchableOptions/
 

@@ -94,6 +94,7 @@ Click behavior:
 The project uses:
 
 - Kotlin JVM
+- Java 21 toolchain, matching Rider 2025.3 / IntelliJ Platform 253
 - IntelliJ Platform Gradle Plugin 2.x
 - Rider platform type `RD`
 - Gradle Wrapper

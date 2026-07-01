@@ -16,10 +16,11 @@ class SourcePathResolverTest {
         val file = root.resolve("DotNet").resolve("Hotfix").resolve("Code").resolve("Module").resolve("Actor").resolve("ActorHandleHelper.cs")
         file.parent.createDirectories()
         file.createFile()
+        val remoteRootName = "stack-trace-tree-remote-${temp.fileName}"
 
         val resolver = SourcePathResolver()
         val resolution = resolver.resolve(
-            """D:\Server2\pokeworld_dev\Server\GameServer\DotNet\Hotfix\Code\Module\Actor\ActorHandleHelper.cs""",
+            """Z:\$remoteRootName\Server2\pokeworld_dev\Server\GameServer\DotNet\Hotfix\Code\Module\Actor\ActorHandleHelper.cs""",
             listOf(root),
             emptyList(),
         )

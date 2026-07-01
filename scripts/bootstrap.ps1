@@ -46,7 +46,7 @@ function Ensure-JavaHome {
 
     $java = Get-Command java -ErrorAction SilentlyContinue
     if (-not $java) {
-        throw "Java 17+ was not found. Install JDK 17+ or pass -RiderPath to use Rider bundled JBR."
+        throw "Java 21 was not found. Install JDK 21 or pass -RiderPath to use Rider bundled JBR."
     }
 }
 

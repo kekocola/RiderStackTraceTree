@@ -14,7 +14,7 @@ group = pluginGroup
 version = pluginVersion
 
 kotlin {
-    jvmToolchain(17)
+    jvmToolchain(21)
 }
 
 fun detectLocalRider(): String? {
@@ -35,13 +35,16 @@ dependencies {
         if (localRider.isNotBlank() && file(localRider).exists()) {
             local(localRider)
         } else {
-            create("RD", "2025.3.4.1", useInstaller = false)
+            create("RD", "2025.3.4.1") {
+                useInstaller = false
+            }
         }
 
         testFramework(TestFrameworkType.Platform)
     }
 
     testImplementation(kotlin("test"))
+    testImplementation("junit:junit:4.13.2")
 }
 
 intellijPlatform {
@@ -71,7 +74,9 @@ intellijPlatform {
             if (localRider.isNotBlank() && file(localRider).exists()) {
                 local(localRider)
             } else {
-                create("RD", "2025.3.4.1", useInstaller = false)
+                create("RD", "2025.3.4.1") {
+                    useInstaller = false
+                }
             }
         }
     }

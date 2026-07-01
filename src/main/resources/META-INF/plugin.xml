@@ -1,5 +1,5 @@
 <idea-plugin>
-    <id>com.example.rider.stacktrace.tree</id>
+    <id>io.github.kokoc.csharp.stacktrace.tree</id>
     <name>C# Stack Trace Tree</name>
     <vendor>Local Tools</vendor>
 

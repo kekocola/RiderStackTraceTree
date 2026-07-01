@@ -43,5 +43,10 @@ If Gradle or dependency downloads are too slow or unavailable, say that clearly 
 
 ## Important Updates
 
+- 2026-07-01: Ignored IntelliJ Platform Gradle Plugin's generated `.intellijPlatform/` workspace directory.
+- 2026-07-01: Changed plugin ID to `io.github.kokoc.csharp.stacktrace.tree` so JetBrains Plugin Verifier accepts the descriptor.
+- 2026-07-01: Added JUnit 4 test dependency required by the IntelliJ Platform JUnit5 test listener.
+- 2026-07-01: Aligned the Kotlin JVM toolchain with Rider 2025.3's Java 21 runtime.
+- 2026-07-01: Fixed IntelliJ Platform Gradle Plugin 2.x Rider dependency configuration and made PowerShell build/package scripts stop cleanly on Gradle failures.
 - 2026-07-01: Initial Rider plugin scaffold created with Kotlin, IntelliJ Platform Gradle Plugin 2.x, Tool Window UI, C# stack parser, source path resolver, navigation wrapper, settings dialog, tests, PowerShell scripts, and user docs.
 - 2026-07-01: Added persistent design documentation, repository agent instructions, and `.gitignore`.
